@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <!-- Adding Boostrap -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!------------Fonts------------->
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Rye&display=swap" rel="stylesheet">
+
+
+
+    <!------------Linking Css and Java Script----------------->
+    <link rel="stylesheet" href="{{url_for('static',filename='main.css')}}">
+
+    <script src="{{url_for('static',filename='main.js')}}"></script>
+
+    <!------------------JQuery------------------------------>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-------------------------------------------------------->
+
+    <!-- Load an icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Load an icon library -->
+    <script src="https://kit.fontawesome.com/a72e526f38.js" crossorigin="anonymous"></script>
+
+    
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title%} {% endblock%} Yoyo Streaming service</title>
+</head>
+
+<body>
+    <div class="mylogo">
+    <img src="{{url_for('static', filename='images/yoyo_logo.jpeg')}}" alt="mylogo" style="width:8%" >
+
+    </div>
+    <div class="mode">
+        <button id="theme" onclick="darkMode()"><i class="fa fa-fw fa-wrench"></i> Theme</button>
+    </div>
+
+    <h1 id="logo_name">Yoyo</h1> 
+    <br>
+    <h6> Home of Streaming...</h6>
+    <br>
+
+    <div>
+        <form id="search_bar" action="https://google.co.uk/search" method="get"> 
+        <input type="search" id="query" name="q" placeholder="Search...">
+        <button><i class="fa-solid fa-magnifying-glass"></i> Search</button>
+        </form>
+
+    </div>
+    
+    <nav class="nav_container">
+        
+        <ul id="main_nav">
+
+        <li><a class ="active" href="{{url_for('home')}}"> <i class="fa fa-fw fa-home"> </i> Home</a></li>
+
+        <li><a class ="active" href="/trending"><i class="fa fa-globe"></i> Trending</a></li>
+
+        <li><a class ="active" href="/login"><i class="fa fa-fw fa-user"></i> Log in</a></li>
+        
+        <li><a class ="active" href="/signup"><i class="fa-solid fa-user-plus"></i> Sign Up</a></li>
+        
+        <li><a class ="active" href="/contact"><i class="fa fa-fw fa-envelope"></i> Contact us</a></li>
+    
+        </ul>
+    </nav>
+
+    
+    {% block content%} 
+    
+    
+    
+    {% endblock%} 
+    
+<br><br><br>
+    <div class="main_footer">
+
+        <footer>
+            </ul>
+
+            <p class="copyright">Kalkidan Haile © 2022. This webiste is created for acadamic purpose only.</p>
+        </footer>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,255 @@
+{% extends 'base.html' %}
+
+<h2>
+{% block title%} Trending {% endblock%} </h2>
+
+{% block content%}
+
+<main class="trending_header">
+
+<p class="h2">Trending now:</p>
+<p class="h4"> Movies:</p>
+
+</main>
+
+<div class="row">
+    <div class="column">
+        <p>DC's <br>The Batman</p>
+    <img src="{{url_for('static', filename='images/batman.jpeg')}}" alt="The Batman" style="width:100%">
+    <div id="trailer_links">
+    <a href ="https://www.youtube.com/watch?v=mqqft2x_Aa4" target="_blank"> 
+        <button><i class="fa-solid fa-circle-play"></i>Watch Trailer</button>
+    <a href="./login" target="_blank">
+        <button><i class="fa-solid fa-circle-play"></i>   Watch Now</button>
+    </a>
+    </a>
+    </div>
+    </div>
+
+    <div class="column">
+        <p>Disney's <br>Turning Red</p>
+    <img src="{{url_for('static', filename='images/red.jpeg')}}" alt="Turning Red" style="width:100%">
+    <div id="trailer_links">
+        <a href ="https://www.youtube.com/watch?v=pqdHP2dWQ9M" target="_blank"> 
+            <button><i class="fa-solid fa-circle-play"></i>Watch Trailer</button>
+            <a href="./login" target="_blank">
+                <button><i class="fa-solid fa-circle-play"></i>  Watch Now</button>
+        </a>
+        </div>
+    </div>
+
+    <div class="column">
+        <p>Death on the Nile</p>
+    <img src="{{url_for('static', filename='images/nile.jpeg')}}" alt="Death on the Nile" style="width:100%">
+    <div id="trailer_links">
+        <a href ="https://www.youtube.com/watch?v=dZRqB0JLizw" target="_blank"> 
+            <button><i class="fa-solid fa-circle-play"></i>Watch Trailer</button>
+        <a href="./login" target="_blank">
+            <button><i class="fa-solid fa-circle-play"></i>  Watch Now</button>
+        </a>
+        </div>
+
+    </div>
+    <div class="column">
+        <p id="tv_shows">Blade Runner 2049</p>
+    <img src="{{url_for('static', filename='images/bladerunner.jpeg')}}" alt="Blade Runner 2049" style="width:100%">
+    <div id="trailer_links">
+        <a href ="https://www.youtube.com/watch?v=gCcx85zbxz4" target="_blank"> 
+            <button><i class="fa-solid fa-circle-play"></i>Watch Trailer</button>
+        <a href="./login" target="_blank">
+            <button><i class="fa-solid fa-circle-play"></i>  Watch Now</button>
+        </a>
+    </div>
+    </div>
+
+
+    <div class="column">
+        <p>Shawshank Redemption</p>
+    <img src="{{url_for('static', filename='images/shaw.jpeg')}}" alt="The Shawshank Redemption" style="width:100%">
+    <div id="trailer_links">
+        <a href ="https://www.youtube.com/watch?v=PLl99DlL6b4" target="_blank"> 
+            <button><i class="fa-solid fa-circle-play"></i>Watch Trailer</button>
+        <a href="./login" target="_blank">
+                <button><i class="fa-solid fa-circle-play"></i>  Watch Now</button>
+        </a>
+    </div>
+    </div>
+
+
+    <div class="column">
+        <p>Forzen <br>II </p>
+    <img src="{{url_for('static', filename='images/frozen.jpeg')}}" alt="Forzen 2" style="width:100%">
+
+    <div id="trailer_links">
+        <a href ="https://www.youtube.com/watch?v=Zi4LMpSDccc" target="_blank"> 
+            <button><i class="fa-solid fa-circle-play"></i>Watch Trailer</button>
+        <a href="./login" target="_blank">
+                <button><i class="fa-solid fa-circle-play"></i>  Watch Now</button>
+        </a>
+    </div>
+    </div>
+    <div class="column">
+        <p>Avengers Infinity war</p>
+    <img src="{{url_for('static', filename='images/infinitywar.jpeg')}}" alt="Avenger Infinity War" style="width:100%">
+    <div id="trailer_links">
+        <a href ="https://www.youtube.com/watch?v=6ZfuNTqbHE8" target="_blank"> 
+        <button><i class="fa-solid fa-circle-play"></i>Watch Trailer</button>
+        <a href="./login" target="_blank">
+            <button><i class="fa-solid fa-circle-play"></i>  Watch Now</button>
+        </a>
+    </div>
+    </div>
+
+    <div class="column">
+        <p>Avengers Endgame</p>
+    <img src="{{url_for('static', filename='images/endgame.jpeg')}}" alt="Avenger Endgame" style="width:110%">  
+    <div id="trailer_links">
+        <a href ="https://www.youtube.com/watch?v=TcMBFSGVi1c" target="_blank"> 
+        <button><i class="fa-solid fa-circle-play"></i>Watch Trailer</button>
+        <a href="./login" target="_blank">
+            <button><i class="fa-solid fa-circle-play"></i>  Watch Now</button>
+        </a>
+    </div>
+    </div>
+
+    <div class="column">
+        <p>The <br>Titanic</p>
+    <img src="{{url_for('static', filename='images/titanic.jpeg')}}" alt="Titanic" style="width:100%">
+
+    <div id="trailer_links">
+        <a href ="https://www.youtube.com/watch?v=CHekzSiZjrY" target="_blank"> 
+            <button><i class="fa-solid fa-circle-play"></i>Watch Trailer</button>
+        <a href="./login" target="_blank">
+            <button><i class="fa-solid fa-circle-play"></i>  Watch Now</button>
+        </a>
+    </div>
+    </div>
+
+<div>
+    <br>
+    <p class="h4">TV Shows:</p>
+</div>
+
+    <div class="row">
+    <div class="column">
+        <p>Loki</p>
+    <img src="{{url_for('static', filename='images/loki.jpeg')}}" alt="Loki" style="width:100%">
+
+    <div id="trailer_links">
+        <a href ="https://www.youtube.com/watch?v=nW948Va-l10" target="_blank"> 
+        <button><i class="fa-solid fa-circle-play"></i>Watch Trailer</button>
+        <a href="./login" target="_blank">
+            <button><i class="fa-solid fa-circle-play"></i>Watch Now</button>
+        </a>
+    </div>
+    
+    </div>
+
+
+    <div class="column">
+        <p id="tv_shows">Walking Dead</p>
+    <img src="{{url_for('static', filename='images/walking dead.jpeg')}}" alt="The Walking Dead" style="width:100%">
+
+    <div id="trailer_links">
+        <a href ="https://www.youtube.com/watch?v=qwOWJ8pPgk8" target="_blank"> 
+        <button><i class="fa-solid fa-circle-play"></i>Watch Trailer</button>
+        <a href="./login" target="_blank">
+            <button><i class="fa-solid fa-circle-play"></i>Watch Now</button>
+        </a>
+    </div>
+
+
+    </div>
+    <div class="column">    
+        <p>The 100</p>
+    <img src="{{url_for('static', filename='images/the100.jpeg')}}" alt="The 100" style="width:100%">
+    <div id="trailer_links">
+        <a href ="https://www.youtube.com/watch?v=aDrsItJ_HU4" target="_blank"> 
+        <button><i class="fa-solid fa-circle-play"></i>Watch Trailer</button>
+        <a href="./login" target="_blank">
+            <button><i class="fa-solid fa-circle-play"></i>Watch Now</button>
+        </a>
+    </div>
+    </div>
+
+
+    <div class="column">
+        <p>Money Heist</p>
+    <img src="{{url_for('static', filename='images/moneyheist.jpeg')}}" alt="Money Heist" style="width:105%"><br>
+    <div id="trailer_links">
+        <a href ="https://www.youtube.com/watch?v=_InqQJRqGW4" target="_blank"> 
+        <button><i class="fa-solid fa-circle-play"></i>Watch Trailer</button>
+        <a href="./login" target="_blank">
+        <button><i class="fa-solid fa-circle-play"></i>Watch Now</button>
+        </a>
+    </div>
+    </div>
+
+    <div class="column">
+        <p>Moon Knight</p>
+    <img src="{{url_for('static', filename='images/moonknight.jpeg')}}" alt="Moon Knight" style="width:100%">
+
+    <div id="trailer_links">
+        <a href ="https://www.youtube.com/watch?v=x7Krla_UxRg" target="_blank"> 
+        <button><i class="fa-solid fa-circle-play"></i>Watch Trailer</button>
+        <a href="./login" target="_blank">
+            <button><i class="fa-solid fa-circle-play"></i>Watch Now</button>
+        </a>
+    </div>
+    </div>
+
+    <div class="column">
+        <p>Bobba Fett</p>
+    <img src="{{url_for('static', filename='images/boba.jpeg')}}" alt="Boba Fett" style="width:100%">
+
+    <div id="trailer_links">
+        <a href ="https://www.youtube.com/watch?v=rOJ1cw6mohw" target="_blank"> 
+        <button><i class="fa-solid fa-circle-play"></i>Watch Trailer</button>
+        <a href="./login" target="_blank">
+            <button><i class="fa-solid fa-circle-play"></i>Watch Now</button>
+        </a>
+    </div>
+    </div>
+
+    <div class="column">
+        <p>Obi Wan</p>
+    <img src="{{url_for('static', filename='images/onekenobi.jpeg')}}" alt="Obi Wan Kenobi" style="width:100%">
+
+    <div id="trailer_links">
+        <a href ="https://www.youtube.com/watch?v=TWTfhyvzTx0" target="_blank"> 
+        <button><i class="fa-solid fa-circle-play"></i>Watch Trailer</button>
+        <a href="./login" target="_blank">
+            <button><i class="fa-solid fa-circle-play"></i>Watch Now</button>
+        </a>
+    </div>
+    </div>
+
+    <div class="column">
+        <p>Peacemaker</p>
+    <img src="{{url_for('static', filename='images/peacemaker.jpeg')}}" alt="Peace Maker" style="width:100%">
+
+    <div id="trailer_links">
+        <a href ="https://www.youtube.com/watch?v=WHXq62VCaCM" target="_blank"> 
+        <button><i class="fa-solid fa-circle-play"></i>Watch Trailer</button>
+        <a href="./login" target="_blank">
+            <button><i class="fa-solid fa-circle-play"></i>Watch Now</button>
+        </a>
+    </div>
+    </div>
+
+    <div class="column">
+        <p>GOT</p>
+    <img src="{{url_for('static', filename='images/got.jpeg')}}" alt="Game of Thrones" style="width:100%">
+
+    <div id="trailer_links">
+        <a href ="https://www.youtube.com/watch?v=bjqEWgDVPe0" target="_blank"> 
+        <button><i class="fa-solid fa-circle-play"></i>Watch Trailer</button>
+        <a href="./login" target="_blank">
+            <button><i class="fa-solid fa-circle-play"></i>Watch Now</button>
+        </a>
+        <br><br><br><br><br>    
+    </div>
+    </div>
+
+
+{% endblock%} 

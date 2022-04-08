@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+<h2>
+{% block title%} Log in {% endblock%} 
+
+</h2>
+
+{% block content%}
+
+<br><br><br>
+<div class="signup_container1">
+    <form class="signup_form">
+    <p class="h3">Please create Yoyo account to start streaming:</p><br>
+    <label for="email"><b>Enter your Email:</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+    <br><br><br>
+    <label for="psw"><b>Create Password:</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+    <br><br><br>
+    <label for="psw-repeat"><b>Repeat Password:</b>
+    
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+    </label>
+    <br><br>
+    <label>
+    <input type="checkbox" unchecked="unchecked" name="remember" style="margin-bottom:15px"> Remember me
+    </label>
+    <p>By creating an account you agree to our <a href="./500.html" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+    <div>
+      <button id="cancelbtn">Cancel</button>
+      <button id="sumbit">Sign Up</button>
+    </div>
+
+</div>
+
+</form> 
+
+
+{% endblock%} 

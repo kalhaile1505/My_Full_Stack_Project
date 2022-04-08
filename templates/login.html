@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+<h2>
+{% block title%} Log in to your account {% endblock%} 
+
+</h2>
+
+{% block content%}
+
+<br><br><br>
+<main>
+<div class="login_container1">
+    
+<form class="login_form">
+    <p class="h3">Login to your Yoyo account:</p><br> <br>
+    <label for="uname">User name:</label>
+    <input type="text" placeholder="Enter Username" name="uname" required> <br><br>
+    <label for="pword">Password:</label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+    <br><br>
+    <button id="sumbit">Login</button><br>
+    <label>
+    <input type="checkbox" unchecked="unchecked" name="remember"> Remember me
+    </label> <br><br>
+    <span class="psw">Forgot Password ?<a href="./404.html">     Click here to reset</a></span><br><br>
+
+    <p>Not a member yet?</p><br>
+    <a href="./signup" target="blank">Rigster here</a>
+
+</form> 
+</div>
+</main>
+
+
+{% endblock%} 
+
+

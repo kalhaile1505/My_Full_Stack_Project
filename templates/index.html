@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+<h2>
+{% block title%} HOME {% endblock%} 
+
+</h2>
+
+{% block content%}
+<br>
+<br>
+<br>
+<br>
+<p class="h3">Welcome to Yoyo Streaming Service</p>
+<br>
+<br>
+<p class="h4">Unlimited films, TV programmes and more.Watch anywhere. Cancel at any time....</p>
+<br><br><br>
+<p class="h6">Ready to watch? Enter your email to create or restart your membership.</p>
+
+<div class="email">
+
+<label for="email"><b>Get Started</b></label>
+<input type="text" placeholder="Enter Email" name="email" id="email" required>
+    <a href="./signup.html">
+    <button id="sumbit"><i class="fa-solid fa-paper-plane"></i> Submit</button>
+</a>
+
+</div>
+
+{% endblock %}
